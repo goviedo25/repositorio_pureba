@@ -1,0 +1,165 @@
+body{
+    line-height: 1.5;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+h1{
+    color:  rgb(47, 48, 48);
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+h2{
+    color:  rgb(222, 237, 238);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Book Antiqua;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h3{
+    color: rgb(71, 71, 71);
+}
+h4{
+    font-family: Book Antiqua;
+    color: rgb(71, 71, 71);
+}
+ul{
+    margin-bottom: 0px;
+    color: rgb(222, 237, 238);
+}
+/*UTILIDADES*/
+/*--------------------------------------------*/
+.font-oblique{
+    font-style: oblique;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.img-servicios{
+    height: 70%;
+    width: 70%;
+}
+.img-productos{
+    height: 250px;
+    width: 200px;
+}
+.img-contacto{
+    width: 20vh;
+    height: 15vh;
+    margin: 10px;
+}
+.contenedor-productos{
+    background-color: rgb(209, 184, 100);
+    margin: 10px;
+    padding: 10px;
+}
+.text-productos{
+    color: rgb(33, 34, 34);
+    font-weight: 500;
+}
+.text-servicios{
+    color: rgba(222, 237, 238, 0.973);
+}
+/*HEADER*/
+.site-header{
+    background-color: rgb(209, 184, 100);
+}
+#h1-header{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.col-md-6 a:hover{
+    color:rgb(209, 184, 100);
+}
+
+/*NAVEGACION*/
+/*--------------------------*/
+.navegacion a{
+    color: rgb(47, 48, 48);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.navegacion a:hover{
+    color: rgb(33, 114, 94);
+}
+
+/*SECCION*/
+/*---------------------------------*/
+.seccion-principal{
+    background-color: rgb(33, 114, 94);
+}
+.seccion-principal h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+/*SECCION "Sobre Nosotros.."*/
+/*-------------------------------*/
+.sec-nosotros-info{
+    padding-top: 5px;
+    background-color:  rgb(190, 168, 96);
+}
+.iconos h3{
+    text-transform: uppercase;
+}
+.img-info{
+    width: 10vh;
+    height: 10vh;
+}
+.parrafo-inicio {
+    color: rgb(71, 71, 71);
+}
+
+/*TESTIMONIO*/
+/*-------------------------------------------*/
+.testimonio {
+    padding: 8px;
+}
+.testimonio p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    color:  rgba(222, 237, 238, 0.973);
+    font-style: italic;
+}
+
+/*ASIDE*/
+/*--------------------------------------------*/
+.seccion-juego{
+    background-color: rgb(190, 168, 95);
+}
+.seccion-juego h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+.seccion-juego button{
+    font-style: italic;
+    position: center;
+}
+
+/*FOOTER*/
+/*-----------------------*/
+.foto-pie-pagina{
+    background-image: url(/img/pie_pagina.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 30vh;
+}
+.site-footer {
+    background-color:rgb(209, 184, 100);
+    margin: 0;
+}
+
+

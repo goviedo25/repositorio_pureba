@@ -10,17 +10,19 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="/css/estilos.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 justify-content-center">
             <a href="/index.html"><h1 id="h1-header">ECO.CONSUMO</h1></a>
           </div>
           <div class="col-md-6">
-            <nav class="navegacion text-right">
+            <nav
+              class="navbar navbar-expand-md navegacion justify-content-center"
+            >
               <a href="servicios.html">Servicios</a>
               <a href="productos.html">Productos</a>
               <a href="contacto.html">Contacto</a>
@@ -36,11 +38,11 @@
             <h2>Servicios</h2>
           </div>
         </div>
-        <ul>
+        <ul style="padding-left: 0px">
           <li>
             <div class="row">
               <div class="col-md-6">
-                <p>
+                <p class="text-servicios">
                   <strong> AUDITORIA </strong> <br />
                   Hacemos auditorias ambientales para empresas estatales y
                   privadas. Estamos certificados para cumplir con las normativas
@@ -59,7 +61,7 @@
           <li>
             <div class="row">
               <div class="col-md-6">
-                <p>
+                <p class="text-servicios">
                   <strong> BUENAS PRACTICAS AGRICOLAS </strong> <br />
                   Brindamos un servicio de acompañamiento a los trabajadores del
                   sector agricola para que incrementen sus rendimientos y
@@ -79,7 +81,7 @@
           <li>
             <div class="row">
               <div class="col-md-6">
-                <p>
+                <p class="text-servicios">
                   <strong> PROYECTOS DE GESTION AMBIENTAL </strong> <br />
                   Estamos en constante elaboracion de ideas para generar
                   proyectos de impacto social, a través de la gestion ambiental
@@ -98,17 +100,25 @@
         </ul>
       </div>
     </section>
-    <div class="foto-pie-pagina"></div>
     <footer class="site-footer">
-      <div class="barra-footer">
-        <nav class="navegacion">
-          <a href="servicios.html">Servicios</a>
-          <a href="productos.html">Productos</a>
-          <a href="contacto.html">Contacto</a>
-        </nav>
-        <p style="color: whitesmoke">
-          Todos los Derechos Reservados 2019 &copy;
-        </p>
+      <div class="foto-pie-pagina"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md">
+            <nav
+              class="navbar navbar-expand-md navegacion justify-content-left"
+            >
+              <a href="servicios.html">Servicios</a>
+              <a href="productos.html">Productos</a>
+              <a href="contacto.html">Contacto</a>
+            </nav>
+          </div>
+          <div class="col-md text-right">
+            <p style="color: rgb(71, 70, 70); padding-top: 5px">
+              Todos los Derechos Reservados 2019 &copy;
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

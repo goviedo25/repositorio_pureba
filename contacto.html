@@ -1,12 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Contacto</h1>
-    <a href="index.html">Volver</a>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/estilos.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 justify-content-center">
+            <a href="/index.html"><h1 id="h1-header">ECO.CONSUMO</h1></a>
+          </div>
+          <div class="col-md-6">
+            <nav
+              class="navbar navbar-expand-md navegacion justify-content-center"
+            >
+              <a href="servicios.html">Servicios</a>
+              <a href="productos.html">Productos</a>
+              <a href="contacto.html">Contacto</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="seccion-principal text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Contacto</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form action="#">
+              <div class="form-group">
+                <label for="nombre">Apellido y Nombre</label>
+                <input type="text" id="nombre" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="localidad">Localidad</label>
+                <input
+                  type="text"
+                  id="localidad"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="provincia">Provincia</label>
+                <input
+                  type="text"
+                  id="provincia"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <a href="https://www.facebook.com/pehuen.ecoarte"
+              ><img
+                class="img-contacto"
+                src="/img/logo_facebook.png"
+                alt="logo_facebook"
+            /></a>
+          </div>
+          <div class="col-md-6 text-center">
+            <a href="https://www.instagram.com/pehuen.ecoarte/?hl=es-la"
+              ><img
+                class="img-contacto"
+                src="/img/logo_instagram.jpg"
+                alt="logo_facebook"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="seccion-juego text-center">
+      <div class="container">
+        <h2>Jugamos ?</h2>
+        <h3>Adivina adivinador....</h3>
+        <p class="font-oblique">
+          En verano barbudo y en invierno desnudo.. Esto es duro!
+        </p>
+        <p class="font-oblique">
+          Que es ? <input type="text" id="respuesta" />
+        </p>
+        <button onclick="jugar()">Responder</button>
+      </div>
+    </aside>
+    <footer class="site-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md">
+            <nav
+              class="navbar navbar-expand-md navegacion justify-content-left"
+            >
+              <a href="servicios.html">Servicios</a>
+              <a href="productos.html">Productos</a>
+              <a href="contacto.html">Contacto</a>
+            </nav>
+          </div>
+          <div class="col-md text-right">
+            <p style="color: whitesmoke; padding-top: 5px">
+              Todos los Derechos Reservados 2019 &copy;
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function jugar() {
+        var cant_intentos = 4;
+        var acerto = false;
+        var respuesta_correcta = "Bosque";
+        var respuesta;
+
+        var respuesta = document.getElementById("respuesta").value;
+        if (respuesta == "") {
+          alert("Por favor ingrese una respuesta");
+        } else {
+          while (cant_intentos > 0 && acerto != true) {
+            cant_intentos--;
+            if (respuesta == respuesta_correcta) {
+              alert("Acertaste! Cuidemos nuestros bosques :)");
+              acerto = true;
+            } else if (cant_intentos > 2) {
+              respuesta = prompt("Casi.. Otro intento!");
+            } else if (cant_intentos == 2) {
+              respuesta = prompt(
+                "Te quedan 2 intentos, una pista: lo habitan muchos seres vivos"
+              );
+            } else if (cant_intentos == 1) {
+              respuesta = prompt(
+                "Te queda 1 intento, ultima pista: una sola palabra, contiene 3 vocales, primer letra en mayuscula!!"
+              );
+            } else {
+              alert("Maldicion ! Perdiste :(");
+            }
+          }
+        }
+      }
+    </script>
+  </body>
 </html>
