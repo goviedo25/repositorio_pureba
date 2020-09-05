@@ -152,14 +152,13 @@ ul{
 /*FOOTER*/
 /*-----------------------*/
 .foto-pie-pagina{
-    background-image: url("img/producto1.jpeg");
+    background-image: url("/img/pie_pagina.jpg");
     background-position: center center;
     background-size: cover;
-    /*background-repeat: no-repeat;*/
     min-height: 30vh;
 }
 .site-footer {
-    /*background-color:rgb(209, 184, 100);*/
+    background-color:rgb(209, 184, 100);
     margin: 0;
 }
 
