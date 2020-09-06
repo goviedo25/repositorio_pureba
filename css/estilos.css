@@ -153,7 +153,7 @@ ul{
 /*-----------------------*/
 
 .foto-pie-pagina{
-    background-image: url("/img/pie_pagina.jpg");
+    background-image: url("../img/pie_pagina.jpg");
     background-position: center center;
     background-size: cover;
     min-height: 30vh;
